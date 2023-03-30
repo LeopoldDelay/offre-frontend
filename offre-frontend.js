@@ -138,8 +138,8 @@
           method: 'get',
           url: `https://devis.koncrete.fr/devis/${order_id}/${$(this).attr('offer_id')}/payment-link?Date=${data.Date}&creneau=${data.creneau}`,
           headers: {
-            'Content-Type': 'application/json',
-          },
+            'Content-Type': 'application/json'
+          }
         }
         axios(config)
         .then(function (response) {
